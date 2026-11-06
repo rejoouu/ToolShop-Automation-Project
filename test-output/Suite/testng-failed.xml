@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testpkg.Details_test">
+        <methods>
+          <include name="teardown"/>
+          <include name="detailspagetitleverify"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testpkg.Details_test -->
+      <class name="testpkg.Myaccount_test">
+        <methods>
+          <include name="messagesverify"/>
+          <include name="homebuttonverify"/>
+          <include name="teardown"/>
+          <include name="myaccountverify"/>
+          <include name="invoicesverify"/>
+          <include name="setup"/>
+          <include name="profileverify"/>
+        </methods>
+      </class> <!-- testpkg.Myaccount_test -->
+      <class name="testpkg.Home_test">
+        <methods>
+          <include name="emailverify"/>
+          <include name="verifyFrenchLanguage"/>
+          <include name="teardown"/>
+          <include name="titleverify"/>
+          <include name="searchboxverify"/>
+          <include name="productdetailsnavigation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testpkg.Home_test -->
+      <class name="testpkg.Login_test">
+        <methods>
+          <include name="Login" invocation-numbers="0 1"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testpkg.Login_test -->
+      <class name="testpkg.Checkout_test">
+        <methods>
+          <include name="VerifyCheckout"/>
+          <include name="teardown"/>
+          <include name="VerifyInvalidBankDetails"/>
+          <include name="VerifyInvalidPostcode"/>
+          <include name="VerifyInvalidHouseNumber"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testpkg.Checkout_test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
